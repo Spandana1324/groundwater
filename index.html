@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groundwater Availability Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Groundwater Availability Prediction</h1>
+        <form>
+            <div class="form-group">
+                <label for="totalRainfall">Total Rainfall:</label>
+                <input type="text" id="totalRainfall" name="totalRainfall" placeholder="Enter total rainfall">
+            </div>
+            <div class="form-group">
+                <label for="annualGroundwater">Net Annual Groundwater Availability:</label>
+                <input type="text" id="annualGroundwater" name="annualGroundwater" placeholder="Enter net annual groundwater availability">
+            </div>
+            <div class="form-group">
+                <label for="totalUsage">Total Usage:</label>
+                <input type="text" id="totalUsage" name="totalUsage" placeholder="Enter total usage">
+            </div>
+            <div class="form-group">
+                <label for="futureAvailability">Future Availability:</label>
+                <input type="text" id="futureAvailability" name="futureAvailability" placeholder="Enter future availability">
+            </div>
+            <div class="form-group">
+                <label for="projectedDemand">Projected Demand for Domestic and Industrial Uses:</label>
+                <input type="text" id="projectedDemand" name="projectedDemand" placeholder="Enter projected demand">
+            </div>
+            <div class="form-group">
+                <label for="naturalDischarge">Natural Discharge During Non-Monsoon Season:</label>
+                <input type="text" id="naturalDischarge" name="naturalDischarge" placeholder="Enter natural discharge">
+            </div>
+            <div class="form-group">
+                <button type="submit">Predict</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
